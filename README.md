@@ -1,0 +1,2 @@
+# recruit-newday
+Diamond Kata
