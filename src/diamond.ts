@@ -1,5 +1,5 @@
 exports.printDiamond = (inputChar: string): void => {
-    if (inputChar.length !== 1 || !inputChar.match(/[a-zA-Z]/)) {
+    if (!inputChar || inputChar.length !== 1 || !inputChar.match(/[a-zA-Z]/)) {
         console.log('Invalid input.');
         return;
     }

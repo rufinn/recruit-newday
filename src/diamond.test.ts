@@ -51,4 +51,22 @@ describe('Diamond Kamta', () => {
         expect(spyConsole).toHaveBeenCalledTimes(1);
         expect(spyConsole).toHaveBeenCalledWith('Invalid input.');
     });
+
+    it('should render error message if input is a number', () => {
+        diamond.printDiamond(1);
+        expect(spyConsole).toHaveBeenCalledTimes(1);
+        expect(spyConsole).toHaveBeenCalledWith('Invalid input.');
+    });
+
+    it('should render error message if input is NULL', () => {
+        diamond.printDiamond(null);
+        expect(spyConsole).toHaveBeenCalledTimes(1);
+        expect(spyConsole).toHaveBeenCalledWith('Invalid input.');
+    });
+
+    it('should render error message if input is undefined', () => {
+        diamond.printDiamond(undefined);
+        expect(spyConsole).toHaveBeenCalledTimes(1);
+        expect(spyConsole).toHaveBeenCalledWith('Invalid input.');
+    });
 });
