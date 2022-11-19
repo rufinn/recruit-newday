@@ -4,7 +4,8 @@
   "description": "Interview task for Newday.",
   "main": "diamond.ts",
   "scripts": {
-    "test": "jest"
+    "test": "jest",
+    "start": "tsc --build && node ./build/index.js"
   },
   "repository": {
     "type": "git",
